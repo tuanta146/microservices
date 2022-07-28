@@ -15,7 +15,7 @@ spec:
         component: postgres
     spec:
       containers:
-        - name: postgres
+        - name: postgrestest
           image: postgres:11
           ports:
             - containerPort: 5432
@@ -35,7 +35,7 @@ spec:
       spec:
         accessModes:
           - ReadWriteOnce
-        storageClassName: mystorageclass
+        storageClassName: hostpath
         resources:
           requests:
             storage: 5Gi
