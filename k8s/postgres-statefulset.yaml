@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       component: postgres
-  serviceName: postgrestest
+  serviceName: postgres
   template:
     metadata:
       labels:
